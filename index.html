@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>American Legion Lowell Post 101 | Lowell, Indiana</title>
+<meta name="description" content="American Legion Lowell Post 101 at 108 E Commercial Ave, Lowell, IN. Bingo on the 2nd and 4th Saturdays, hall rental, and the Labor Day festival.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{
+  --primary:#1B3D6D;--accent:#D72131;--dark:#0E1E37;--light:#F5F7FA;
+  --ink:#1a2333;--muted:#5a6578;--line:#dde3ec;--white:#fff;
+  --r:4px;
+  --display:'Archivo',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.01em;overflow-wrap:anywhere;color:var(--dark)}
+h1{font-size:clamp(2.3rem,6vw,4.5rem);font-weight:800}
+h2{font-size:clamp(1.8rem,3.6vw,2.8rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:700}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor}
+.lede{font-size:1.1rem;color:var(--muted);max-width:56ch}
+section{padding:clamp(4rem,9vw,7rem) 0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;font-family:var(--display);font-weight:700;font-size:.98rem;letter-spacing:.02em;text-decoration:none;padding:.9rem 1.5rem;border-radius:var(--r);border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer;min-height:48px}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:#b81a28}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--dark)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--dark)}
+.btn-line{border-color:var(--primary);color:var(--primary)}
+.btn-line:hover{background:var(--primary);color:#fff}
+.btn svg{width:18px;height:18px}
+
+/* Utility bar */
+.utility{background:var(--dark);color:#c9d3e3;font-size:.85rem}
+.utility .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.5rem;padding-bottom:.5rem;flex-wrap:wrap}
+.utility a{color:#fff;text-decoration:none;font-weight:600}
+.utility a:hover{text-decoration:underline}
+.utility .dot{display:inline-block;width:6px;height:6px;border-radius:var(--r);background:var(--accent);margin-right:.5rem;vertical-align:middle}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:76px}
+.brand{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.brand img{height:46px;width:auto;object-fit:contain}
+.brand span{font-family:var(--display);font-weight:800;color:var(--primary);font-size:1.05rem;line-height:1.1}
+.brand small{display:block;font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.links{display:flex;align-items:center;gap:2rem;list-style:none}
+.links a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--dark);position:relative;padding:.3rem 0}
+.links a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--accent);transition:width .2s}
+.links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:.7rem}
+.toggle{display:none;width:48px;height:48px;border:2px solid var(--line);background:#fff;border-radius:var(--r);cursor:pointer;align-items:center;justify-content:center}
+.toggle span,.toggle span::before,.toggle span::after{display:block;width:20px;height:2px;background:var(--dark);position:relative;transition:transform .2s,background .2s}
+.toggle span::before,.toggle span::after{content:"";position:absolute;left:0}
+.toggle span::before{top:-6px}.toggle span::after{top:6px}
+.toggle[aria-expanded="true"] span{background:transparent}
+.toggle[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.toggle[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.mobile{display:none;border-top:1px solid var(--line);background:#fff}
+.mobile ul{list-style:none;padding:.5rem 0 1.2rem}
+.mobile a{display:block;padding:.85rem 0;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--dark);border-bottom:1px solid var(--line)}
+.mobile .btn{margin-top:1rem;width:100%;border-bottom:0;color:#fff}
+.mobile.open{display:block}
+
+/* Hero */
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;color:#fff;padding:0;overflow:hidden;background:var(--dark)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,30,55,.35) 0%,rgba(14,30,55,.55) 45%,rgba(14,30,55,.92) 100%),linear-gradient(90deg,rgba(14,30,55,.7) 0%,rgba(14,30,55,0) 70%)}
+.hero .wrap{position:relative;z-index:2;padding-top:6rem;padding-bottom:clamp(3rem,7vw,5.5rem);width:100%}
+.hero h1{color:#fff;max-width:15ch}
+.hero .eyebrow{color:#fff}
+.hero .eyebrow::before{background:var(--accent)}
+.hero p{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:48ch;margin:1.3rem 0 2rem;color:#e3e9f2}
+.hero .actions{display:flex;gap:.8rem;flex-wrap:wrap}
+
+/* Stats */
+.stats{background:var(--primary);color:#fff;padding:0}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:2rem 1.5rem;border-left:1px solid rgba(255,255,255,.14)}
+.stat:last-child{border-right:1px solid rgba(255,255,255,.14)}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1;color:#fff}
+.stat span{font-size:.92rem;color:#c8d4e6}
+
+/* Notice */
+.notice{background:var(--accent);color:#fff;padding:1.1rem 0}
+.notice .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.notice p{font-family:var(--display);font-weight:700;font-size:1.1rem}
+.notice a{color:#fff;font-weight:700}
+
+/* Services */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:3rem;flex-wrap:wrap}
+.head h2{max-width:18ch}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:2.2rem 1.9rem;display:flex;flex-direction:column;gap:.8rem;position:relative;transition:box-shadow .25s,transform .25s;border-top:4px solid var(--primary)}
+.card:hover{box-shadow:0 18px 40px -20px rgba(14,30,55,.35);transform:translateY(-3px)}
+.card.red{border-top-color:var(--accent)}
+.card .tag{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.card p{color:var(--muted);flex:1}
+.card a{font-family:var(--display);font-weight:700;color:var(--primary);text-decoration:none;display:inline-flex;align-items:center;gap:.4rem}
+.card a:hover{color:var(--accent)}
+
+/* Gallery */
+.gallery{background:var(--light)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:200px;gap:1rem}
+.frame{border-radius:var(--r);overflow:hidden;position:relative;background:#d8dee8;margin:0}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.frame:hover img{transform:scale(1.03)}
+.frame figcaption{position:absolute;left:0;right:0;bottom:0;padding:2.5rem 1rem .9rem;color:#fff;font-weight:600;font-size:.92rem;background:linear-gradient(transparent,rgba(14,30,55,.85))}
+.g1{grid-column:span 7;grid-row:span 2}
+.g2{grid-column:span 5;grid-row:span 3}
+.g3{grid-column:span 3;grid-row:span 2}
+.g4{grid-column:span 4;grid-row:span 2}
+
+/* About */
+.about .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.about .frame{aspect-ratio:3/2}
+.points{list-style:none;margin-top:2rem;display:grid;gap:1.2rem}
+.points li{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.points i{width:34px;height:34px;border-radius:var(--r);background:var(--light);display:grid;place-items:center;color:var(--accent);font-style:normal}
+.points i svg{width:18px;height:18px}
+.points b{font-family:var(--display);font-weight:700;display:block;color:var(--dark)}
+.points span{color:var(--muted);font-size:.96rem}
+.about .lede{margin-top:1rem}
+
+/* Honor band */
+.honor{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+.honor .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.honor h2{color:#fff}
+.honor p{color:#c8d4e6;margin-top:1rem;max-width:50ch}
+.honor .eyebrow{color:#ff6b77}
+.honor .frame{aspect-ratio:16/9}
+.honor .actions{margin-top:2rem;display:flex;gap:.8rem;flex-wrap:wrap}
+
+/* Area */
+.area .box{display:grid;grid-template-columns:1.2fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.area .copy{padding:clamp(2rem,5vw,3.5rem)}
+.area .copy p{color:var(--muted);margin-top:1rem;max-width:52ch}
+.area .side{background:var(--light);padding:clamp(2rem,5vw,3.5rem);display:flex;flex-direction:column;justify-content:center;gap:1.4rem;border-left:4px solid var(--accent)}
+.area .side dt{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.area .side dd{font-family:var(--display);font-weight:700;font-size:1.2rem;color:var(--dark)}
+
+/* Contact */
+.contact{background:var(--primary);color:#fff;text-align:center}
+.contact h2{color:#fff;max-width:20ch;margin:0 auto}
+.contact p{color:#d3ddec;max-width:52ch;margin:1.2rem auto 2.2rem;font-size:1.1rem}
+.contact .actions{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap}
+.contact .eyebrow{color:#fff}
+.contact .eyebrow::before{background:var(--accent)}
+
+/* Footer */
+footer{background:var(--dark);color:#b9c5d8;padding:4rem 0 2rem;font-size:.95rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
+.fbrand{font-family:var(--display);font-weight:800;color:#fff;font-size:1.3rem;line-height:1.2}
+footer h3{color:#fff;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem}
+footer ul{list-style:none;display:grid;gap:.5rem}
+footer a{text-decoration:none;color:#e4eaf3}
+footer a:hover{color:#fff;text-decoration:underline}
+.fbottom{margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.85rem}
+
+/* Reveal */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal.d1{transition-delay:.08s}.js .reveal.d2{transition-delay:.16s}.js .reveal.d3{transition-delay:.24s}
+
+@media (max-width:960px){
+  .links,.nav-cta .btn{display:none}
+  .toggle{display:inline-flex}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:1px solid rgba(255,255,255,.14)}
+  .cards{grid-template-columns:1fr}
+  .about .wrap,.honor .wrap,.area .box{grid-template-columns:1fr}
+  .area .side{border-left:0;border-top:4px solid var(--accent)}
+  .grid{grid-auto-rows:160px}
+  .g1{grid-column:span 12;grid-row:span 2}
+  .g2{grid-column:span 6;grid-row:span 3}
+  .g3{grid-column:span 6;grid-row:span 3}
+  .g4{grid-column:span 12;grid-row:span 2}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .utility .hide-sm{display:none}
+  .brand span{display:none}
+  .stat{padding:1.4rem 1rem}
+  .grid{grid-auto-rows:140px;gap:.7rem}
+  .g2,.g3{grid-column:span 12;grid-row:span 3}
+  .fgrid{grid-template-columns:1fr}
+  .hero .actions .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="utility">
+  <div class="wrap">
+    <span><span class="dot"></span>Bingo every 2nd &amp; 4th Saturday at the hall</span>
+    <span><span class="hide-sm">Veterans, families &amp; neighbors: </span><a href="tel:+12196969120">(219) 696-9120</a></span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="American Legion Lowell Post 101 home">
+      <img src="https://www.legion.org/getmedia/8c5b6b10-7ac5-4268-9a0b-1651dc2ed505/TAL-brand-primary-RGB.png" alt="The American Legion" width="150" height="46">
+      <span>Lowell Post 101<small>Lowell, Indiana</small></span>
+    </a>
+    <ul class="links">
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Photos</a></li>
+      <li><a href="#about">The Post</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-accent" href="tel:+12196969120">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call the Post
+      </a>
+      <button class="toggle" aria-expanded="false" aria-controls="mnav" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile" id="mnav" aria-label="Mobile">
+    <div class="wrap">
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Photos</a></li>
+        <li><a href="#about">The Post</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a class="btn btn-accent" href="tel:+12196969120">Call (219) 696-9120</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkzNDbQA1IUhC3C9Uxpg79jHWEJpr3BDhrTrKpNC6nyDqdiGhGOiYn_3qLhInUoZ-Biro96xomoC3wHJ_7U2XuuhQ_ZQaN9xTCFsPNuMSP4X_fnhvXkNocnd_fr3HBTxEURnGX=w1600-h1600" alt="A military jeep driving the parade route in Lowell" width="1600" height="900" fetchpriority="high">
+    <div class="wrap reveal">
+      <span class="eyebrow">American Legion Post 101</span>
+      <h1>Lowell's hall for veterans and neighbors.</h1>
+      <p>Bingo on Saturdays, a hall you can rent, and a Labor Day festival the whole town shows up for. 108 E Commercial Ave, downtown Lowell.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="tel:+12196969120">Call (219) 696-9120</a>
+        <a class="btn btn-ghost" href="#events">See what's on</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="At a glance">
+    <div class="wrap reveal">
+      <div class="stat"><b>Post 101</b><span>The American Legion in Lowell</span></div>
+      <div class="stat"><b>2nd &amp; 4th</b><span>Saturdays of the month for bingo</span></div>
+      <div class="stat"><b>Labor Day</b><span>Festival on the post grounds</span></div>
+      <div class="stat"><b>4.2 ★</b><span>From 60 Google reviews</span></div>
+    </div>
+  </section>
+
+  <section id="events" aria-labelledby="ev-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <span class="eyebrow">What happens here</span>
+          <h2 id="ev-h">Three reasons to come through the door.</h2>
+        </div>
+        <p class="lede">Everything below is on the hall marquee. For times and details, call the post directly.</p>
+      </div>
+      <div class="cards">
+        <article class="card red reveal d1">
+          <span class="tag">2nd &amp; 4th Saturdays</span>
+          <h3>Bingo</h3>
+          <p>Bingo in the hall twice a month. Bring a friend, grab a seat, and play with the neighbors.</p>
+          <a href="tel:+12196969120">Ask about start times →</a>
+        </article>
+        <article class="card reveal d2">
+          <span class="tag">For your event</span>
+          <h3>Hall rental</h3>
+          <p>The post hall is available to rent. Call to check open dates and talk through what you're planning.</p>
+          <a href="tel:+12196969120">Check a date →</a>
+        </article>
+        <article class="card red reveal d3">
+          <span class="tag">Every Labor Day</span>
+          <h3>Labor Day festival</h3>
+          <p>The post's festival on the lawn: games, a big slide for the kids, and a day out in Lowell.</p>
+          <a href="#gallery">See festival photos →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="notice reveal" role="note">
+    <div class="wrap">
+      <p>Planning a party, reunion or meeting? The Post 101 hall is available to rent.</p>
+      <a href="tel:+12196969120">Call (219) 696-9120</a>
+    </div>
+  </div>
+
+  <section class="gallery" id="gallery" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <span class="eyebrow">Around the post</span>
+          <h2 id="gal-h">Bingo nights, festivals and parades.</h2>
+        </div>
+      </div>
+      <div class="grid">
+        <figure class="frame g1 reveal">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q2GQEvb4aQ17oP_7nrUigr49WEns5s3SmYKQYtq3oNYF9k0Nhm-SRp2RMbVN3ogbjRl5__DfwL71Kswc9dMYYkdelsAARzLfzrEFmftfD1svDcyzsPngjC3Xs-nzGTBsAoBNE=w1600-h1600" alt="Players at tables during bingo night in the Legion hall" width="1600" height="1200" loading="lazy">
+          <figcaption>Bingo night in the hall</figcaption>
+        </figure>
+        <figure class="frame g2 reveal d1">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qe0k3Fjc8ApmMAvS5cLiQnuUawFfBYt8L7UnfGMywf5_4wlmeM9_J8qoFHOpT8nGRC--NysR2xXyFNTrlGeRL5hnbPi1x20Pcu22q5SgWgYBHJk5KU-bkMoU4AZ7IFWL5howmVDg=w1600-h1600" alt="An inflatable slide set up on the lawn during the festival" width="1200" height="1600" loading="lazy">
+          <figcaption>Festival slide on the lawn</figcaption>
+        </figure>
+        <figure class="frame g3 reveal d2">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReGhm1CsMKe69oBZyPqRHjd4DwyfztsdW2JRCED9jm47hZLbxMlzwppl2qzEWK0srrG0RUrq3Q8FyFo1rkvzRndkSNNSx6prs4HVn_H-0HGkTUtmtZ5-HGu0chteH5jN0OQhqPQg=w1600-h1600" alt="A barber chair set up outdoors at the festival" width="900" height="1600" loading="lazy">
+          <figcaption>Festival barber chair</figcaption>
+        </figure>
+        <figure class="frame g4 reveal d3">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_fuu7bEi6dTv8AeVZq_5bykWYns_zbtXVyNyux1axPdh07_IxUeBVdyUTCJxuN9rQ9Q__8gizIiJKE2D7LsF5OiFQ3vr6F5N5cO29aE87Yqh93VopfdrrQlhBc-jxnc4p87BVjA=w1600-h1600" alt="The Post 101 marquee sign with the American Legion emblem" width="1600" height="1067" loading="lazy">
+          <figcaption>The Post 101 marquee</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="ab-h">
+    <div class="wrap">
+      <figure class="frame reveal">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_fuu7bEi6dTv8AeVZq_5bykWYns_zbtXVyNyux1axPdh07_IxUeBVdyUTCJxuN9rQ9Q__8gizIiJKE2D7LsF5OiFQ3vr6F5N5cO29aE87Yqh93VopfdrrQlhBc-jxnc4p87BVjA=w1600-h1600" alt="American Legion emblem on the Post 101 sign on Commercial Avenue" width="1600" height="1067" loading="lazy">
+      </figure>
+      <div class="reveal d1">
+        <span class="eyebrow">The post</span>
+        <h2 id="ab-h">A local post of a national Legion.</h2>
+        <p class="lede">Post 101 is Lowell's chapter of The American Legion, the veterans organization chartered by Congress in 1919. Here it looks like a hall on Commercial Avenue, a marquee out front, and a calendar built around the community.</p>
+        <ul class="points">
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>For veterans</b><span>A place to connect with others who served, close to home.</span></div></li>
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>For families and neighbors</b><span>Bingo, the festival and the hall are open to the town.</span></div></li>
+          <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Downtown Lowell</b><span>Right on E Commercial Ave, easy to find and easy to stop by.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="honor" aria-labelledby="hon-h">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Honor &amp; remembrance</span>
+        <h2 id="hon-h">On the parade route, in front of the town.</h2>
+        <p>Post 101 shows up for Lowell's parades with its float and colors, carrying the Legion's mission of honoring those who served into the street where people can see it.</p>
+        <div class="actions">
+          <a class="btn btn-accent" href="tel:+12196969120">Talk to the post</a>
+          <a class="btn btn-ghost" href="http://www.legion.org" rel="noopener">About The American Legion</a>
+        </div>
+      </div>
+      <figure class="frame reveal d1">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R0zw3THp-_SJYcuUuaNdDafz7Qm-DLCv_mQ57IweRdaLGZ3IzNX10-q-xHfxP5NmMvFQwse1LjkT31XNx9fc_8r8_qijGcllKziCc0oxDNGvGkTneCgxflkS9jttILY_uxVlM=w1600-h1600" alt="The American Legion float moving along a parade route" width="1600" height="900" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div class="box reveal">
+        <div class="copy">
+          <span class="eyebrow">Service area</span>
+          <h2 id="area-h">Serving Lowell, Indiana.</h2>
+          <p>The post is part of downtown Lowell. Veterans, families and neighbors from around town are welcome at bingo, the Labor Day festival, and events in the hall.</p>
+          <p style="margin-top:1.6rem"><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=108+E+Commercial+Ave+Lowell+IN+46356" rel="noopener">Get directions</a></p>
+        </div>
+        <dl class="side">
+          <div><dt>Address</dt><dd>108 E Commercial Ave<br>Lowell, IN 46356</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+12196969120" style="text-decoration:none">(219) 696-9120</a></dd></div>
+          <div><dt>Hours</dt><dd style="font-size:1rem;font-weight:600">Call ahead for hall and event times</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="visit" aria-labelledby="ct-h">
+    <div class="wrap reveal">
+      <span class="eyebrow">Come by the hall</span>
+      <h2 id="ct-h">Questions about bingo, rentals or joining? Call the post.</h2>
+      <p>A quick phone call is the fastest way to get dates, times and answers from Post 101.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="tel:+12196969120">Call (219) 696-9120</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=108+E+Commercial+Ave+Lowell+IN+46356" rel="noopener">Directions to the hall</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap reveal">
+    <div class="fgrid">
+      <div>
+        <div class="fbrand">American Legion<br>Lowell Post 101</div>
+        <p style="margin-top:.8rem;max-width:30ch">Lowell's hall for veterans and neighbors.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <ul>
+          <li>108 E Commercial Ave</li>
+          <li>Lowell, IN 46356</li>
+          <li><a href="tel:+12196969120">(219) 696-9120</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>At the post</h3>
+        <ul>
+          <li><a href="#events">Bingo</a></li>
+          <li><a href="#events">Hall rental</a></li>
+          <li><a href="#events">Labor Day festival</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="#gallery">Photos</a></li>
+          <li><a href="#about">The post</a></li>
+          <li><a href="http://www.legion.org" rel="noopener">legion.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© American Legion Lowell Post 101</span>
+      <span>Lowell, Indiana</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.querySelector('.toggle'),m=document.getElementById('mnav');
+  t.addEventListener('click',function(){
+    var o=t.getAttribute('aria-expanded')==='true';
+    t.setAttribute('aria-expanded',String(!o));
+    t.setAttribute('aria-label',o?'Open menu':'Close menu');
+    m.classList.toggle('open',!o);
+  });
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+    t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Open menu');m.classList.remove('open');
+  });});
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(e){e.classList.add('in');});return;
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
